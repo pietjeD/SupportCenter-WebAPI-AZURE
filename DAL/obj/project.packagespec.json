@@ -1,0 +1,63 @@
+﻿{
+  "version": "1.0.0",
+  "restore": {
+    "projectUniqueName": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj",
+    "projectName": "SC.DAL",
+    "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj",
+    "outputPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\obj\\",
+    "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
+    "originalTargetFrameworks": [
+      "netstandard2.0"
+    ],
+    "frameworks": {
+      "netstandard2.0": {
+        "projectReferences": {
+          "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj": {
+            "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj"
+          }
+        }
+      }
+    },
+    "warningProperties": {
+      "warnAsError": [
+        "NU1605"
+      ]
+    }
+  },
+  "frameworks": {
+    "netstandard2.0": {
+      "dependencies": {
+        "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[2.1.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Proxies": {
+          "target": "Package",
+          "version": "[2.1.4, )"
+        },
+        "Microsoft.EntityFrameworkCore.Sqlite": {
+          "target": "Package",
+          "version": "[2.1.4, )"
+        },
+        "Microsoft.Extensions.Logging.Debug": {
+          "target": "Package",
+          "version": "[2.1.1, )"
+        },
+        "NETStandard.Library": {
+          "suppressParent": "All",
+          "target": "Package",
+          "version": "[2.0.3, )",
+          "autoReferenced": true
+        }
+      },
+      "imports": [
+        "net461"
+      ],
+      "assetTargetFallback": true,
+      "warn": true
+    }
+  }
+}
