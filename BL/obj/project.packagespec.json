@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj",
+    "projectUniqueName": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\BL.csproj",
     "projectName": "SC.BL",
-    "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj",
-    "outputPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\obj\\",
+    "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\BL.csproj",
+    "outputPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15,11 +15,11 @@
     "frameworks": {
       "netstandard2.0": {
         "projectReferences": {
-          "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj": {
-            "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj"
+          "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\DAL.csproj": {
+            "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\DAL.csproj"
           },
-          "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj": {
-            "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj"
+          "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj": {
+            "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj"
           }
         }
       }
