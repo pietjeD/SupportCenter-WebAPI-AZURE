@@ -10,7 +10,7 @@ namespace SC.DAL.EF
     {
         public SupportCenterDbContext()
         {
-            SupportCenterDbInitializer.Initialize(this, dropCreateDatabase: true);
+            SupportCenterDbInitializer.Initialize(this, dropCreateDatabase: false);
         }
         
         public DbSet<Ticket> Tickets { get; set; }
@@ -19,7 +19,7 @@ namespace SC.DAL.EF
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=../UI-MVC/SupportCenterDb_EFCodeFirst.db");
+            optionsBuilder.UseSqlite("Data Source=../SupportCenterDb_EFCodeFirst.db");
             
             // configure logging-information
             optionsBuilder.UseLoggerFactory(new LoggerFactory(
