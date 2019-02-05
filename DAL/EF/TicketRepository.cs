@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.ChangeTracking;
 using SC.BL.Domain;
 
 namespace SC.DAL.EF
@@ -26,7 +27,8 @@ namespace SC.DAL.EF
         {
             ctx.Tickets.Add(ticket);
             ctx.SaveChanges();
-
+                        
+          
             return ticket;
         }
 

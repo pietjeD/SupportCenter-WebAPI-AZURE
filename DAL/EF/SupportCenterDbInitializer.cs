@@ -11,7 +11,7 @@ namespace SC.DAL.EF
     {
         private static bool hasRunDuringAppExecution = false;
 
-        public static void Initialize(SupportCenterDbContext context, bool dropCreateDatabase = false)
+        public static void Initialize(SupportCenterDbContext context, bool dropCreateDatabase = true)
         {
             if (!hasRunDuringAppExecution)
             {
