@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\DAL.csproj",
+    "projectUniqueName": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj",
     "projectName": "SC.DAL",
-    "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\DAL.csproj",
-    "outputPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\obj\\",
+    "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj",
+    "outputPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netstandard2.0": {
         "projectReferences": {
-          "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj": {
-            "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj"
+          "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj": {
+            "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj"
           }
         }
       }

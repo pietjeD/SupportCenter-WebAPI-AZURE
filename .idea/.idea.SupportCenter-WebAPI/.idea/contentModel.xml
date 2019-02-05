@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Stijn Vanreusel\.Rider2018.2\config\extensions" t="IncludeRecursive" />
-    <e p="C:\Users\Stijn Vanreusel\.Rider2018.2\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Stijn Vanreusel\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_SupportCenter-WebAPI.1835572059.00" t="ExcludeRecursive" />
-    <e p="C:\Users\Stijn Vanreusel\Desktop\School\Programmeren 2\Periode2\Week 2\SupportCenter-WebAPI-AZURE" t="IncludeFlat">
+    <e p="C:\Users\daems\.Rider2018.2\config\extensions" t="IncludeRecursive" />
+    <e p="C:\Users\daems\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\daems\.Rider2018.2\system\resharper-host\local\Transient\ReSharperHost\v182\SolutionCaches\_SupportCenter-WebAPI.1952860480.00" t="ExcludeRecursive" />
+    <e p="C:\Users\daems\Documents\2.Karel de grote\2018-2019\programmeren .net\Onderzoekstopics\SupportCenter-WebAPI" t="IncludeFlat">
       <e p="BL" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="BL.csproj" t="IncludeRecursive" />

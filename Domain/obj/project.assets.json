@@ -274,23 +274,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stijn Vanreusel\\.nuget\\packages\\": {},
+    "C:\\Users\\daems\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj",
+      "projectUniqueName": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj",
       "projectName": "SC.BL.Domain",
-      "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj",
-      "packagesPath": "C:\\Users\\Stijn Vanreusel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\obj\\",
+      "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\daems\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Stijn Vanreusel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\daems\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

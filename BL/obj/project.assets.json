@@ -1584,7 +1584,7 @@
       ]
     },
     "System.Buffers/4.4.0": {
-      "sha512": "Ii2bedd4HVzddupdU35n3ygohUPlNn7MDimBOYcwWNce2NizQ1fCSaQJY1Tzv80aMqOGpVcU4wZr/Xe50xcTwg==",
+      "sha512": "VCJfpWcYG1gT3WwivZWgT0KaqY678MQBvrOI2si6V8GHeQOtuW+wpiv5ss4KyfGG+cFFdPNaI+nw2/kExCtGgQ==",
       "type": "package",
       "path": "system.buffers/4.4.0",
       "files": [
@@ -2709,7 +2709,7 @@
       ]
     },
     "System.Numerics.Vectors/4.4.0": {
-      "sha512": "gdRrUJs1RrjW3JB5p82hYjA67xoeFLvh0SdSIWjTiN8qExlbFt/RtXwVYNc5BukJ/f9OKzQQS6gakzbJeHTqHg==",
+      "sha512": "ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
       "type": "package",
       "path": "system.numerics.vectors/4.4.0",
       "files": [
@@ -4045,23 +4045,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Stijn Vanreusel\\.nuget\\packages\\": {},
+    "C:\\Users\\daems\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\BL.csproj",
+      "projectUniqueName": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj",
       "projectName": "SC.BL",
-      "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\BL.csproj",
-      "packagesPath": "C:\\Users\\Stijn Vanreusel\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\obj\\",
+      "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj",
+      "packagesPath": "C:\\Users\\daems\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Stijn Vanreusel\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\daems\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
@@ -4072,11 +4072,11 @@
       "frameworks": {
         "netstandard2.0": {
           "projectReferences": {
-            "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\DAL.csproj": {
-              "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\DAL\\DAL.csproj"
+            "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj": {
+              "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\DAL\\DAL.csproj"
             },
-            "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\Domain\\Domain.csproj"
+            "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\Domain\\Domain.csproj"
             }
           }
         }

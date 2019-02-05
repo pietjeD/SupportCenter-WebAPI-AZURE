@@ -14,4 +14,8 @@
       <ProjectReference Include="..\BL\BL.csproj" />
     </ItemGroup>
 
+    <ItemGroup>
+      <None Remove="pub.xml" />
+    </ItemGroup>
+
 </Project>

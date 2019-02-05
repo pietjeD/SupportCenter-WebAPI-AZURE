@@ -1,10 +1,10 @@
 ﻿{
   "version": "1.0.0",
   "restore": {
-    "projectUniqueName": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\UI-MVC\\UI-MVC.csproj",
+    "projectUniqueName": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\UI-MVC\\UI-MVC.csproj",
     "projectName": "SC.UI.Web.MVC",
-    "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\UI-MVC\\UI-MVC.csproj",
-    "outputPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\UI-MVC\\obj\\",
+    "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\UI-MVC\\UI-MVC.csproj",
+    "outputPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\UI-MVC\\obj\\",
     "projectStyle": "PackageReference",
     "fallbackFolders": [
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -15,8 +15,8 @@
     "frameworks": {
       "netcoreapp2.1": {
         "projectReferences": {
-          "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\BL.csproj": {
-            "projectPath": "C:\\Users\\Stijn Vanreusel\\Desktop\\School\\Programmeren 2\\Periode2\\Week 2\\SupportCenter-WebAPI-AZURE\\BL\\BL.csproj"
+          "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj": {
+            "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj"
           }
         }
       }
