@@ -35,7 +35,6 @@
             </e>
           </e>
         </e>
-        <e p="TicketRepositoryHC.cs" t="Include" />
       </e>
       <e p="Domain" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />

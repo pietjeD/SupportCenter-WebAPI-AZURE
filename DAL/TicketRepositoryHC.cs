@@ -12,7 +12,7 @@ namespace SC.DAL
 
     public TicketRepositoryHC()
     {
-      Seed();
+     // Seed();
     }
 
     private void Seed()
