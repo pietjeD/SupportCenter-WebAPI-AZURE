@@ -22,7 +22,7 @@ namespace SC.DAL.EF
                 // Create database and seed dummy-data if needed 
                 if (context.Database.EnsureCreated()) // 'false' if database already exists
                     // Seed initial (dummy-)data into newly created database
-                    //Seed(context);
+                    Seed(context);
 
                 hasRunDuringAppExecution = true;
             }
@@ -34,7 +34,7 @@ namespace SC.DAL.EF
             Ticket t1 = new Ticket()
             {
                 AccountId = 1,
-                Text = "Ik kan mij niet aanmelden op de webmail",
+                Text = "test1",
                 DateOpened = new DateTime(2017, 9, 9, 13, 5, 59),
                 State = TicketState.Open,
                 Responses = new List<TicketResponse>()
