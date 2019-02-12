@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="SupportCenterDb_EFCodeFirst.db" uuid="6596fce3-b960-458b-9b73-d5a82aa5a310">
-      <driver-ref>sqlite.xerial</driver-ref>
+    <data-source source="LOCAL" name="Azure" uuid="4f0838fe-e484-48ce-bf77-4698545082d2">
+      <driver-ref>azure.ms</driver-ref>
       <synchronize>true</synchronize>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:$PROJECT_DIR$/SupportCenterDb_EFCodeFirst.db</jdbc-url>
+      <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
+      <jdbc-url>jdbc:sqlserver://supportcenter1.database.windows.net:1433;database=supportcenterDB;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</jdbc-url>
       <driver-properties>
-        <property name="enable_load_extension" value="true" />
+        <property name="loginTimeout" value="30" />
+        <property name="trustServerCertificate" value="false" />
+        <property name="encrypt" value="true" />
+        <property name="hostNameInCertificate" value="*.database.windows.net" />
+        <property name="applicationName" value="DataGrip" />
       </driver-properties>
     </data-source>
   </component>

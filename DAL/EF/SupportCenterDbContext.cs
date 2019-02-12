@@ -1,3 +1,6 @@
+using System.Configuration;
+using System.Data.SqlClient;
+using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 //using Microsoft.EntityFrameworkCore.Proxies; // NuGet-package!
 using Microsoft.Extensions.Logging;
@@ -19,8 +22,16 @@ namespace SC.DAL.EF
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite("Data Source=supportcenterDB");
-            
+            //optionsBuilder.UseSqlite("Data Source=supportcenter1/supportcenterDB");
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+
+            builder.DataSource = "supportcenter1.database.windows.net"; 
+            builder.UserID = "PieterEnStijn";            
+            builder.Password = "testing123!";     
+            builder.InitialCatalog = "supportcenterDB";
+
+            optionsBuilder.UseSqlServer(new SqliteConnection(builder.ConnectionString));
+            //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["supportcdnterDB"].ConnectionString);
             // configure logging-information
             optionsBuilder.UseLoggerFactory(new LoggerFactory(
                 new[] { new DebugLoggerProvider(
