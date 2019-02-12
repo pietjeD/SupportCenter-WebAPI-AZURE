@@ -13,7 +13,7 @@ namespace SC.DAL.EF
     {
         public SupportCenterDbContext()
         {
-            SupportCenterDbInitializer.Initialize(this, dropCreateDatabase: false);
+            SupportCenterDbInitializer.Initialize(this /*dropCreateDatabase: true*/);
         }
         
         public DbSet<Ticket> Tickets { get; set; }
@@ -30,7 +30,7 @@ namespace SC.DAL.EF
             builder.Password = "testing123!";     
             builder.InitialCatalog = "supportcenterDB";
 
-            optionsBuilder.UseSqlServer(new SqliteConnection(builder.ConnectionString));
+            optionsBuilder.UseSqlServer(new SqlConnection(builder.ConnectionString));
             //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["supportcdnterDB"].ConnectionString);
             // configure logging-information
             optionsBuilder.UseLoggerFactory(new LoggerFactory(

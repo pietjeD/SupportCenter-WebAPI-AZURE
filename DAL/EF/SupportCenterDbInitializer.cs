@@ -11,13 +11,10 @@ namespace SC.DAL.EF
     {
         private static bool hasRunDuringAppExecution = false;
 
-        public static void Initialize(SupportCenterDbContext context, bool dropCreateDatabase = false)
+        public static void Initialize(SupportCenterDbContext context)
         {
-            if (!hasRunDuringAppExecution)
+            /*if (!hasRunDuringAppExecution)
             {
-                // Delete database if requesed
-                if (dropCreateDatabase)
-                    context.Database.EnsureDeleted();
                 
                 // Create database and seed dummy-data if needed 
                 if (context.Database.EnsureCreated()) // 'false' if database already exists
@@ -26,6 +23,7 @@ namespace SC.DAL.EF
 
                 hasRunDuringAppExecution = true;
             }
+            */
         }
 
         private static void Seed(SupportCenterDbContext context)

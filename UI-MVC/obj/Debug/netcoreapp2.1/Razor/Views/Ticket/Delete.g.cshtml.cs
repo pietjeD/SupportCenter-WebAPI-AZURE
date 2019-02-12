@@ -70,7 +70,7 @@ using SC.UI.Web.MVC.Models;
             WriteLiteral("\n<h2>Ticket verwijderen</h2>\n<p>Ben je zeker dat je onderstaand ticket wenst te verwijderen? </p>\n\n");
             EndContext();
             BeginContext(437, 52, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "e06829489dd14465b12ea01fa23576f8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("partial", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "2aeb5f898c7945a692e3a0518627ab7f", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.PartialTagHelper>();
@@ -95,12 +95,12 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_PartialTagHelper.For = ModelExpressionProv
             WriteLiteral("\n\n");
             EndContext();
             BeginContext(491, 201, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63b1ef448c2f480790bb7f72bc3c0dfc", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fc458245b94146c1a57923711cc4438e", async() => {
                 BeginContext(600, 50, true);
                 WriteLiteral("\n    <input type=\"submit\" value=\"Verwijderen\"/> | ");
                 EndContext();
                 BeginContext(650, 34, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6c6f688671ef4519a5e0f829fd454f90", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6e7429c390c0497f837de03f4eb16074", async() => {
                     BeginContext(672, 8, true);
                     WriteLiteral("Annuleer");
                     EndContext();
