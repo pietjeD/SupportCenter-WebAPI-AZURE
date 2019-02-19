@@ -21,6 +21,7 @@
 
     <ItemGroup>
       <Compile Remove="TicketRepositoryHC.cs" />
+      <Compile Remove="EF\SupportCenterDbInitializer.cs" />
     </ItemGroup>
 
 </Project>

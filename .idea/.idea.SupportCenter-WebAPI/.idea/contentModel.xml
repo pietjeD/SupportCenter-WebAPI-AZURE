@@ -23,9 +23,14 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="DAL.csproj" t="IncludeRecursive" />
         <e p="EF" t="Include">
-          <e p="SupportCenterDbContext.cs" t="Include" />
-          <e p="SupportCenterDbInitializer.cs" t="Include" />
-          <e p="TicketRepository.cs" t="Include" />
+          <e p="Production" t="Include">
+            <e p="ProductionContext.cs" t="Include" />
+            <e p="ProductionRepository.cs" t="Include" />
+          </e>
+          <e p="test" t="Include">
+            <e p="SupportCenterDbContext.cs" t="Include" />
+            <e p="TicketRepository.cs" t="Include" />
+          </e>
         </e>
         <e p="ITicketRepository.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
@@ -80,6 +85,7 @@
             <e p="TicketResponsesController.cs" t="Include" />
             <e p="TicketsController.cs" t="Include" />
           </e>
+          <e p="DataBaseController.cs" t="Include" />
           <e p="HomeController.cs" t="Include" />
           <e p="TicketController.cs" t="Include" />
         </e>

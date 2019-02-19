@@ -1,20 +1,14 @@
-using System.Configuration;
 using System.Data.SqlClient;
-using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-//using Microsoft.EntityFrameworkCore.Proxies; // NuGet-package!
 using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Logging.Debug; // NuGet-package!
+using Microsoft.Extensions.Logging.Debug;
 using SC.BL.Domain;
 
-namespace SC.DAL.EF
+namespace SC.DAL.EF.Production
 {
-    internal class SupportCenterDbContext : DbContext
+    public class ProductionContext :DbContext
     {
-        public SupportCenterDbContext()
-        {
-            SupportCenterDbInitializer.Initialize(this /*dropCreateDatabase: true*/);
-        }
+        
         
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<HardwareTicket> HardwareTickets { get; set; }
@@ -22,16 +16,16 @@ namespace SC.DAL.EF
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            //optionsBuilder.UseSqlite("Data Source=supportcenter1/supportcenterDB");
+           
             SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
 
-            builder.DataSource = "supportcenter1.database.windows.net"; 
+            builder.DataSource = "ProductionDB.database.windows.net"; 
             builder.UserID = "PieterEnStijn";            
             builder.Password = "testing123!";     
-            builder.InitialCatalog = "supportcenterDB";
+            builder.InitialCatalog = "ProductionDB";
 
             optionsBuilder.UseSqlServer(new SqlConnection(builder.ConnectionString));
-            //optionsBuilder.UseSqlServer(ConfigurationManager.ConnectionStrings["supportcdnterDB"].ConnectionString);
+            
             // configure logging-information
             optionsBuilder.UseLoggerFactory(new LoggerFactory(
                 new[] { new DebugLoggerProvider(
@@ -43,6 +37,8 @@ namespace SC.DAL.EF
             // configure lazy-loading: requires ALL navigation-properties to be 'virtual'!!
             //optionsBuilder.UseLazyLoadingProxies();
         }
+        
+        
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -50,7 +46,7 @@ namespace SC.DAL.EF
 
             modelBuilder.Entity<TicketResponse>().Property<int>("TicketFK");
             modelBuilder.Entity<TicketResponse>().HasOne(tr => tr.Ticket).WithMany(t => t.Responses)
-                                                 .HasForeignKey("TicketFK");
+                .HasForeignKey("TicketFK");
         }
     }
 }
