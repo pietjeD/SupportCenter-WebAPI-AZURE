@@ -2,15 +2,6 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
-      "EntityFramework/4.3.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/EntityFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net40/EntityFramework.dll": {}
-        }
-      },
       "Microsoft.CSharp/4.3.0": {
         "type": "package",
         "dependencies": {
@@ -1720,28 +1711,6 @@
     }
   },
   "libraries": {
-    "EntityFramework/4.3.1": {
-      "sha512": "DtZYPuocpJgGiRz7WPODp58R9gjOMrY9FbLO8NetffCjFQbnquu18jKfste1pvaVTMFSgAieKMR9+9Aw2rO5jg==",
-      "type": "package",
-      "path": "entityframework/4.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/App.config.transform",
-        "Content/Web.config.transform",
-        "entityframework.4.3.1.nupkg.sha512",
-        "entityframework.nuspec",
-        "lib/net40/EntityFramework.dll",
-        "lib/net40/EntityFramework.xml",
-        "tools/EF4.3on.NET4.5Readme.txt",
-        "tools/EntityFramework.PowerShell.dll",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/migrate.exe"
-      ]
-    },
     "Microsoft.CSharp/4.3.0": {
       "sha512": "P+MBhIM0YX+JqROuf7i306ZLJEjQYA9uUyRDE+OqwUI5sh41e2ZbPQV3LfAPh+29cmceE1pUffXsGfR4eMY3KA==",
       "type": "package",
@@ -5765,7 +5734,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "EntityFramework >= 4.3.1",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.4",
       "NETStandard.Library >= 2.0.3",
       "System.ComponentModel.Annotations >= 4.5.0"
@@ -5812,10 +5780,6 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
-          "EntityFramework": {
-            "target": "Package",
-            "version": "[4.3.1, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer.Design": {
             "target": "Package",
             "version": "[1.1.4, )"
@@ -5838,17 +5802,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 4.3.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETStandard,Version=v2.0'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        ".NETStandard,Version=v2.0"
-      ]
-    }
-  ]
+  }
 }

@@ -23,15 +23,6 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
-      "EntityFramework/4.3.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/EntityFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net40/EntityFramework.dll": {}
-        }
-      },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
         "type": "package",
         "dependencies": {
@@ -4498,9 +4489,8 @@
       },
       "SC.BL/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.4",
           "SC.BL.Domain": "1.0.0",
           "SC.DAL": "1.0.0",
@@ -4517,7 +4507,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.4",
           "System.ComponentModel.Annotations": "4.5.0"
         },
@@ -4530,9 +4519,8 @@
       },
       "SC.DAL/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
@@ -4551,7 +4539,7 @@
   },
   "libraries": {
     "Castle.Core/4.2.1": {
-      "sha512": "XSNA0Gc1Zu33L+8+/3Tqt+aFu8QWS8UenVHZ7RenIP5wJfhoLrA4PnNscpxReeo5aBq8PDoGnV8rNaOzIOUo/w==",
+      "sha512": "tLlM4XU+aj0n8TdkiHHmV/48GpTuFEPQimFjHTZGD9XTWRCSLQcnB6rOftqaUSCXeBSbmWWEGeLPTLG3siTrcw==",
       "type": "package",
       "path": "castle.core/4.2.1",
       "files": [
@@ -4571,29 +4559,6 @@
         "lib/netstandard1.3/Castle.Core.dll",
         "lib/netstandard1.3/Castle.Core.xml",
         "readme.txt"
-      ]
-    },
-    "EntityFramework/4.3.1": {
-      "sha512": "kZx+E9nldKb56pZRWlbPH6IXUN+rKHNN+HSjVeDfqJYJP9QhBATMNxN/QhJiNO2rW7ArCXKW3EWVwzlHlA1W+w==",
-      "type": "package",
-      "path": "entityframework/4.3.1",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/App.config.transform",
-        "Content/Web.config.transform",
-        "entityframework.4.3.1.nupkg.sha512",
-        "entityframework.nuspec",
-        "lib/net40/EntityFramework.dll",
-        "lib/net40/EntityFramework.xml",
-        "tools/EF4.3on.NET4.5Readme.txt",
-        "tools/EntityFramework.PowerShell.dll",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/migrate.exe"
       ]
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -5907,7 +5872,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore/2.1.4": {
-      "sha512": "Rt2SIF3LPQfBzQYbhOv8LwQKy7UkZh+zJcls5eLTOlbPahLXH7IWCkk3mQpzTvljG55vkhzNcOjzrVLcO0uICA==",
+      "sha512": "72l8hbaJ5cXxZLCFeo46MDnvU8XJiDRNh1YQPzAlqVAlQrUwSVojYbJyOE7vbWqsb8rRqQYJ6NsmgPdUv/NKzw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore/2.1.4",
       "files": [
@@ -5920,7 +5885,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Abstractions/2.1.4": {
-      "sha512": "3djJy9gM2PZQFz6NHPSVzAN8azBu7afehDLwGkCR8yCMVhNzkkVdT/JZMfsSzuNZ302wIFWbzEYSAEI6lBddMA==",
+      "sha512": "5Vc1zdCq7p+E/8ndJnTKHebJeqSC/1gb4hXDPi7UHdqURAxWl3lZV5+79x/dSfO/P6n/sEz5fURYGOMDoreXUA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.abstractions/2.1.4",
       "files": [
@@ -5933,7 +5898,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Analyzers/2.1.4": {
-      "sha512": "VEyuULTq48tbPjwLXo9j5WdObg0ViHYI4CwvdaYG23r13wIP2MJqpn4Nc9HpUQPPxGDqL2FO9HRvSY3Xufgtcw==",
+      "sha512": "cYjXickepORM4UmNdqdZ3l74xhG5OHWMDxsFlqHJGm0qxLAHv5GAI2dKkkGslrjyaPYnfRW3JhAWubBWBt0XUg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.analyzers/2.1.4",
       "files": [
@@ -5974,7 +5939,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Proxies/2.1.4": {
-      "sha512": "eSL+czHdIkfM8uSGMSxX7VxZybAshsQ0YK26276DrrDKjRHRD6jBz3GPqumejUXy9nsKgkHcBTH/94pjO7qVLw==",
+      "sha512": "gi9Pk0FkuOXdzlMCY0U6oqWPdgY1KyiO+cn0ynmpiUAlh17fD/rO06wav0MPrvTeEg0Le+1TazSZIkFMdYH2JA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.proxies/2.1.4",
       "files": [
@@ -5987,7 +5952,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational/2.1.4": {
-      "sha512": "Ekl7Kjo5YrPahQ1FJJVSd1ZTnmbtCPdkbI8CMZfbGBQMtrYgBttHxE4bTA4+Ys69+BTRMc/AdWoCfRyioxZA+w==",
+      "sha512": "cn/sEABCjVEp+Ji8LaDjGc7kjD2fJ9y46GL7rTnP1imWmdEYr3eL1oTNKOukMCNwjEGf1pZid0f0LKXaWBGbHw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational/2.1.4",
       "files": [
@@ -6000,7 +5965,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Relational.Design/1.1.4": {
-      "sha512": "mYfwte6F3/+U8+HHwz1Ijjwm1aXQtNzIIShAer7U+svjXLRst32tBh4lbVWVT8nm+jJyla78vJ96CJYC16pVzA==",
+      "sha512": "A42v3X8XMKrOpPOrksEicH8BoSG2IhsDT7QfVcoZo7unfq3i8pxuKS8IzOBW8aKEZpo7r8LNIGROdq1ZPuKyFg==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.relational.design/1.1.4",
       "files": [
@@ -6015,7 +5980,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer/2.1.4": {
-      "sha512": "f5Zl534MVOrVhe5kAYE9eFN+4AYW6IUw7+i5NeNQ+8eJQpAjCW5HlzGBkFVerHwzkjcM/Z3tlqMTzrdpO+f0HA==",
+      "sha512": "Wnl51dw9/iuccesbkxvD4Z8IpfvhqqSWycRe3wOi7udXJGzB3uhFM2nM5CiWqmAYwZw6JdSxj1FkVhKQYrVMSA==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlserver/2.1.4",
       "files": [
@@ -6028,7 +5993,7 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.SqlServer.Design/1.1.4": {
-      "sha512": "GgPG0fAqbq7ANhEL+ZzpbzEo4tTOZGNBvpmnwdQColPu449lareE96qx+MG179iKzI5U4CxHDORO89bJ4yqFYA==",
+      "sha512": "ctl4BctQGPqI9wq0YZWCnDmFqBqUePysghZ3gvCKDYSeH+zEaz4vxfjC3zVTsM34fE5Wu/ylPLs399d9TvrmgQ==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.sqlserver.design/1.1.4",
       "files": [
@@ -6065,10 +6030,9 @@
       ]
     },
     "Microsoft.EntityFrameworkCore.Tools.DotNet/1.1.4": {
-      "sha512": "mfLeToIOFvdo8hJb/gp0l6iAl82v1q2Zjh4IhzqNI63ySKgIoORgRH2YOf3TwcSTIa+j5zyRa2/SkgIZvGyhnQ==",
+      "sha512": "jCJJsr+VudhzJrue1BH4D6MkD8TM6VmSdadwPetrsgx0M+xLlL/WVGGsalGNTPV7nRxKJCqTEP4C8fOPhOTIvw==",
       "type": "package",
       "path": "microsoft.entityframeworkcore.tools.dotnet/1.1.4",
-      "hasTools": true,
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -8340,7 +8304,7 @@
       ]
     },
     "System.Diagnostics.DiagnosticSource/4.5.1": {
-      "sha512": "zCno/m44ymWhgLFh7tELDG9587q0l/EynPM0m4KgLaWQbz/TEKvNRX2YT5ip2qXW/uayifQ2ZqbnErsKJ4lYrQ==",
+      "sha512": "m86SgxAIi5j0iGzx2y1LrcMcopIYfinfcojyQ9CcNRy3MZvi0dVuDlMj2M7kV6MMGSunqZ+OnQ+rQbxWafFBaw==",
       "type": "package",
       "path": "system.diagnostics.diagnosticsource/4.5.1",
       "files": [
@@ -8498,7 +8462,7 @@
       ]
     },
     "System.Diagnostics.TraceSource/4.3.0": {
-      "sha512": "VnYp1NxGx8Ww731y2LJ1vpfb/DKVNKEZ8Jsh5SgQTZREL/YpWRArgh9pI8CDLmgHspZmLL697CaLvH85qQpRiw==",
+      "sha512": "PXWAEqWXamctxvdYSlHY+HG0e++cVkg0FwiqtiOZ4Ziy31GD9uab2QAgkuDKUARcCdVq3DfruvdMnPfalEJbNw==",
       "type": "package",
       "path": "system.diagnostics.tracesource/4.3.0",
       "files": [
@@ -12066,7 +12030,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "EntityFramework >= 4.3.1",
       "Microsoft.AspNetCore.App >= 2.1.1",
       "Microsoft.EntityFrameworkCore.Tools.DotNet >= 1.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
@@ -12118,10 +12081,6 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "EntityFramework": {
-            "target": "Package",
-            "version": "[4.3.1, )"
-          },
           "Microsoft.AspNetCore.App": {
             "suppressParent": "All",
             "target": "Package",
@@ -12133,6 +12092,7 @@
             "version": "[1.1.4, )"
           },
           "Microsoft.NETCore.App": {
+            "suppressParent": "All",
             "target": "Package",
             "version": "[2.1.0, )",
             "autoReferenced": true
@@ -12145,17 +12105,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 4.3.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }

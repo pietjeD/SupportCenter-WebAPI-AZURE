@@ -1,7 +1,7 @@
 {
   "runtimeTarget": {
     "name": ".NETStandard,Version=v2.0/",
-    "signature": "4c22ec773e9e06daf9990489ed12c65a70d63639"
+    "signature": "b5a7817141373ddaa5fa5163d2b62863693b7c9f"
   },
   "compilationOptions": {},
   "targets": {
@@ -9,21 +9,12 @@
     ".NETStandard,Version=v2.0/": {
       "SC.BL.Domain/1.0.0": {
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.4",
           "NETStandard.Library": "2.0.3",
           "System.ComponentModel.Annotations": "4.5.0"
         },
         "runtime": {
           "SC.BL.Domain.dll": {}
-        }
-      },
-      "EntityFramework/4.3.1": {
-        "runtime": {
-          "lib/net40/EntityFramework.dll": {
-            "assemblyVersion": "4.3.1.0",
-            "fileVersion": "4.3.20217.0"
-          }
         }
       },
       "Microsoft.CSharp/4.3.0": {
@@ -1237,13 +1228,6 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
-    },
-    "EntityFramework/4.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-DtZYPuocpJgGiRz7WPODp58R9gjOMrY9FbLO8NetffCjFQbnquu18jKfste1pvaVTMFSgAieKMR9+9Aw2rO5jg==",
-      "path": "entityframework/4.3.1",
-      "hashPath": "entityframework.4.3.1.nupkg.sha512"
     },
     "Microsoft.CSharp/4.3.0": {
       "type": "package",

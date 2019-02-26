@@ -23,15 +23,6 @@
           "lib/netstandard1.3/Castle.Core.dll": {}
         }
       },
-      "EntityFramework/4.3.1": {
-        "type": "package",
-        "compile": {
-          "lib/net40/EntityFramework.dll": {}
-        },
-        "runtime": {
-          "lib/net40/EntityFramework.dll": {}
-        }
-      },
       "Microsoft.EntityFrameworkCore/2.1.4": {
         "type": "package",
         "dependencies": {
@@ -1316,9 +1307,8 @@
       },
       "SC.BL/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.4",
           "SC.BL.Domain": "1.0.0",
           "SC.DAL": "1.0.0",
@@ -1335,7 +1325,6 @@
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore.SqlServer.Design": "1.1.4",
           "System.ComponentModel.Annotations": "4.5.0"
         },
@@ -1348,9 +1337,8 @@
       },
       "SC.DAL/1.0.0": {
         "type": "project",
-        "framework": ".NETStandard,Version=v2.0",
+        "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "EntityFramework": "4.3.1",
           "Microsoft.EntityFrameworkCore": "2.1.4",
           "Microsoft.EntityFrameworkCore.Proxies": "2.1.4",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.4",
@@ -1389,28 +1377,6 @@
         "lib/netstandard1.3/Castle.Core.dll",
         "lib/netstandard1.3/Castle.Core.xml",
         "readme.txt"
-      ]
-    },
-    "EntityFramework/4.3.1": {
-      "sha512": "DtZYPuocpJgGiRz7WPODp58R9gjOMrY9FbLO8NetffCjFQbnquu18jKfste1pvaVTMFSgAieKMR9+9Aw2rO5jg==",
-      "type": "package",
-      "path": "entityframework/4.3.1",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Content/App.config.transform",
-        "Content/Web.config.transform",
-        "entityframework.4.3.1.nupkg.sha512",
-        "entityframework.nuspec",
-        "lib/net40/EntityFramework.dll",
-        "lib/net40/EntityFramework.xml",
-        "tools/EF4.3on.NET4.5Readme.txt",
-        "tools/EntityFramework.PowerShell.dll",
-        "tools/EntityFramework.psd1",
-        "tools/EntityFramework.psm1",
-        "tools/init.ps1",
-        "tools/install.ps1",
-        "tools/migrate.exe"
       ]
     },
     "Microsoft.EntityFrameworkCore/2.1.4": {
@@ -4924,7 +4890,6 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
-      "EntityFramework >= 4.3.1",
       "Microsoft.EntityFrameworkCore.SqlServer.Design >= 1.1.4",
       "Microsoft.NETCore.App >= 2.1.0",
       "Newtonsoft.Json >= 12.0.1",
@@ -4980,10 +4945,6 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "EntityFramework": {
-            "target": "Package",
-            "version": "[4.3.1, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer.Design": {
             "target": "Package",
             "version": "[1.1.4, )"
@@ -5006,17 +4967,5 @@
         "warn": true
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1701",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'EntityFramework 4.3.1' was restored using '.NETFramework,Version=v4.6.1' instead of the project target framework '.NETCoreApp,Version=v2.1'. This package may not be fully compatible with your project.",
-      "libraryId": "EntityFramework",
-      "targetGraphs": [
-        ".NETCoreApp,Version=v2.1"
-      ]
-    }
-  ]
+  }
 }
