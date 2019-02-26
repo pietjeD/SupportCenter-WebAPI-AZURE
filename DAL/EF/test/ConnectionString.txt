@@ -1,0 +1,4 @@
+supportcenter1.database.windows.net 
+PieterEnStijn           
+testing123!    
+supportcenterDB

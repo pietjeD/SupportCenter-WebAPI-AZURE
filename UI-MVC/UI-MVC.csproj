@@ -4,10 +4,17 @@
         <TargetFramework>netcoreapp2.1</TargetFramework>
         <AssemblyName>SC.UI.Web.MVC</AssemblyName>
         <RootNamespace>SC.UI.Web.MVC</RootNamespace>
+        <StartupObject>SC.UI.Web.MVC</StartupObject>
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="EntityFramework">
+          <Version>4.3.1</Version>
+        </PackageReference>
         <PackageReference Include="Microsoft.AspNetCore.App" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.Tools.DotNet">
+          <Version>1.1.4</Version>
+        </PackageReference>
     </ItemGroup>
 
     <ItemGroup>
@@ -16,6 +23,15 @@
 
     <ItemGroup>
       <None Remove="pub.xml" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Remove="Controllers\Api\TicketResponsesController.cs" />
+      <Compile Remove="Controllers\Api\TicketsController.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers\Api" />
     </ItemGroup>
 
 </Project>
