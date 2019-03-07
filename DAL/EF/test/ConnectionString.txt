@@ -1,4 +1,4 @@
-supportcenter1.database.windows.net 
-PieterEnStijn           
-testing123!    
-supportcenterDB
+dotnetdeploymentserver.database.windows.net
+Pieter  
+testing123!     
+testingDB
