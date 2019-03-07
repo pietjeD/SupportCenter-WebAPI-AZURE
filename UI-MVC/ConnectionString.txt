@@ -1,4 +1,4 @@
-dotmetdeploymentserver.database.windows.net
-Pieter
-testing123!     
+dotnetdeploymentserver.database.windows.net
+pieter
+testing123!   
 testingDB

@@ -15,7 +15,7 @@ namespace SC.DAL.EF
     {
         public SupportCenterDbContext()
         {
-            SupportCenterDbInitializer.Initialize(this);
+           // SupportCenterDbInitializer.Initialize(this);
         }
 
         
@@ -32,11 +32,17 @@ namespace SC.DAL.EF
             string connectionString = Path.Combine(Environment.CurrentDirectory, "ConnectionString.txt");
             string[] lines = System.IO.File.ReadAllLines(connectionString);
     
-            builder.DataSource = lines[0];
-            builder.UserID = lines[1];          
-            builder.Password = lines[2];    
-            builder.InitialCatalog = lines[3];
+            //builder.DataSource = lines[0];
+            //builder.UserID = lines[1];          
+            //builder.Password = lines[2];    
+            //builder.InitialCatalog = lines[3];
+           // builder.IntegratedSecurity = true;
+            builder.DataSource = "dotnetdeploymentserver.database.windows.net";
+            builder.UserID = "Pieter";
+            builder.Password = "testing123!";
+            builder.InitialCatalog = "testingDB";
             builder.IntegratedSecurity = false;
+            
 
             optionsBuilder.UseSqlServer(new SqlConnection(builder.ConnectionString));
             
