@@ -1,4 +1,0 @@
-dotnetdeploymentserver.database.windows.net
-Pieter  
-testing123!     
-testingDB

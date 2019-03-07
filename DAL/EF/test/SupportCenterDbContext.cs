@@ -3,6 +3,7 @@ using System.Configuration;
 using System.Data.SqlClient;
 using System.IO;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Migrations.Operations;
 //using Microsoft.EntityFrameworkCore.Proxies; // NuGet-package!
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.Debug; // NuGet-package!
@@ -12,7 +13,11 @@ namespace SC.DAL.EF
 {
     internal class SupportCenterDbContext : DbContext
     {
-        
+        public SupportCenterDbContext()
+        {
+            SupportCenterDbInitializer.Initialize(this);
+        }
+
         
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<HardwareTicket> HardwareTickets { get; set; }
@@ -31,10 +36,11 @@ namespace SC.DAL.EF
             builder.UserID = lines[1];          
             builder.Password = lines[2];    
             builder.InitialCatalog = lines[3];
+            builder.IntegratedSecurity = false;
 
             optionsBuilder.UseSqlServer(new SqlConnection(builder.ConnectionString));
             
-            // configure logging-information
+            /*// configure logging-information
             optionsBuilder.UseLoggerFactory(new LoggerFactory(
                 new[] { new DebugLoggerProvider(
                     (category, level) => category == DbLoggerCategory.Database.Command.Name
@@ -44,6 +50,7 @@ namespace SC.DAL.EF
 
             // configure lazy-loading: requires ALL navigation-properties to be 'virtual'!!
             //optionsBuilder.UseLazyLoadingProxies();
+            */
         }
         
         
