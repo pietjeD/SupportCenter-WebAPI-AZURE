@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
-    <data-source source="LOCAL" name="Azure" uuid="4f0838fe-e484-48ce-bf77-4698545082d2">
+    <data-source source="LOCAL" name="Azure" uuid="397530ca-1105-420b-978a-17b5d4bc0045">
       <driver-ref>azure.ms</driver-ref>
       <synchronize>true</synchronize>
       <jdbc-driver>com.microsoft.sqlserver.jdbc.SQLServerDriver</jdbc-driver>
-      <jdbc-url>jdbc:sqlserver://dotnetdeploymentserver.database.windows.net:1433;database=testingDB;encrypt=true;trustServerCertificate=false;hostNameInCertificate=*.database.windows.net;loginTimeout=30;</jdbc-url>
+      <jdbc-url>jdbc:sqlserver://dotnetdeploymentserver.database.windows.net:1433;database=testingDB</jdbc-url>
       <driver-properties>
         <property name="loginTimeout" value="30" />
         <property name="trustServerCertificate" value="false" />
