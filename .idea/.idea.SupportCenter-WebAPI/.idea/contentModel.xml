@@ -30,6 +30,11 @@
           </e>
         </e>
         <e p="ITicketRepository.cs" t="Include" />
+        <e p="Migrations" t="Include">
+          <e p="20190312150959_init.cs" t="Include" />
+          <e p="20190312150959_init.Designer.cs" t="Include" />
+          <e p="SupportCenterDbContextModelSnapshot.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
