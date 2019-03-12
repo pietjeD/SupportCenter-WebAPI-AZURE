@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>netcoreapp2.1</TargetFramework>
+        <TargetFramework>netcoreapp2.2</TargetFramework>
         <RootNamespace>SC.UI.CA</RootNamespace>
         <AssemblyName>SC.UI.CA</AssemblyName>
         <LangVersion>5</LangVersion>

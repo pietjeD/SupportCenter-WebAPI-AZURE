@@ -10,10 +10,10 @@
       "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
     ],
     "originalTargetFrameworks": [
-      "netcoreapp2.1"
+      "netcoreapp2.2"
     ],
     "frameworks": {
-      "netcoreapp2.1": {
+      "netcoreapp2.2": {
         "projectReferences": {
           "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj": {
             "projectPath": "C:\\Users\\daems\\Documents\\2.Karel de grote\\2018-2019\\programmeren .net\\Onderzoekstopics\\SupportCenter-WebAPI\\BL\\BL.csproj"
@@ -28,12 +28,12 @@
     }
   },
   "frameworks": {
-    "netcoreapp2.1": {
+    "netcoreapp2.2": {
       "dependencies": {
         "Microsoft.AspNetCore.App": {
           "suppressParent": "All",
           "target": "Package",
-          "version": "[2.1.1, )",
+          "version": "[2.2.0, )",
           "autoReferenced": true
         },
         "Microsoft.EntityFrameworkCore.Tools.DotNet": {
@@ -43,7 +43,7 @@
         "Microsoft.NETCore.App": {
           "suppressParent": "All",
           "target": "Package",
-          "version": "[2.1.0, )",
+          "version": "[2.2.0, )",
           "autoReferenced": true
         }
       },
