@@ -31,8 +31,10 @@
         </e>
         <e p="ITicketRepository.cs" t="Include" />
         <e p="Migrations" t="Include">
-          <e p="20190312150959_init.cs" t="Include" />
-          <e p="20190312150959_init.Designer.cs" t="Include" />
+          <e p="20190314001845_init.cs" t="Include" />
+          <e p="20190314001845_init.Designer.cs" t="Include" />
+          <e p="20190314003005_second.cs" t="Include" />
+          <e p="20190314003005_second.Designer.cs" t="Include" />
           <e p="SupportCenterDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
@@ -106,6 +108,7 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
+        <e p="SupportCenterDb_EFCodeFirst.db" t="Include" />
         <e p="test_api.http" t="Include" />
         <e p="UI-MVC.csproj" t="IncludeRecursive" />
         <e p="Views" t="Include">

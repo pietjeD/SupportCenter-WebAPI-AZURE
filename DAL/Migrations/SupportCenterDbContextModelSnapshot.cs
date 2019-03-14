@@ -38,6 +38,8 @@ namespace SC.DAL.Migrations
                         .IsRequired()
                         .HasMaxLength(100);
 
+                    b.Property<string>("textField");
+
                     b.HasKey("TicketNumber");
 
                     b.HasIndex("State");
