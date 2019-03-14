@@ -40,6 +40,8 @@ namespace SC.UI.CA
                 Console.WriteLine();
                 Console.WriteLine("Er heeft zich een onverwachte fout voorgedaan!");
                 Console.WriteLine();
+                Console.WriteLine(e);
+                Console.WriteLine();
             }
         }
 

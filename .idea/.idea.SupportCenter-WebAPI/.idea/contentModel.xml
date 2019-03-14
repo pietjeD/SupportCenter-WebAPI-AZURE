@@ -23,11 +23,8 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="DAL.csproj" t="IncludeRecursive" />
         <e p="EF" t="Include">
-          <e p="test" t="Include">
-            <e p="SupportCenterDbContext.cs" t="Include" />
-            <e p="SupportCenterDbInitializer.cs" t="Include" />
-            <e p="TicketRepository.cs" t="Include" />
-          </e>
+          <e p="SupportCenterDbContext.cs" t="Include" />
+          <e p="TicketRepository.cs" t="Include" />
         </e>
         <e p="ITicketRepository.cs" t="Include" />
         <e p="Migrations" t="Include">
@@ -108,7 +105,6 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
-        <e p="SupportCenterDb_EFCodeFirst.db" t="Include" />
         <e p="test_api.http" t="Include" />
         <e p="UI-MVC.csproj" t="IncludeRecursive" />
         <e p="Views" t="Include">

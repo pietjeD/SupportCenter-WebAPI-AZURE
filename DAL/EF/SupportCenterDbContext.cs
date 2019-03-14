@@ -1,6 +1,4 @@
-using System;
 using System.Data.SqlClient;
-using System.IO;
 using Microsoft.EntityFrameworkCore;
 using SC.BL.Domain;
 
@@ -8,11 +6,6 @@ namespace SC.DAL.EF
 {
     internal class SupportCenterDbContext : DbContext
     {
-        public SupportCenterDbContext()
-        {
-           // SupportCenterDbInitializer.Initialize(this);
-        }
-
         
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<HardwareTicket> HardwareTickets { get; set; }
@@ -44,23 +37,3 @@ namespace SC.DAL.EF
         }
     }
 }
-//string connectionString = Path.Combine(Environment.CurrentDirectory, "ConnectionString.txt");
-//string[] lines = System.IO.File.ReadAllLines(connectionString);
-    
-//builder.DataSource = lines[0];
-//builder.UserID = lines[1];          
-//builder.Password = lines[2];    
-//builder.InitialCatalog = lines[3];
-// builder.IntegratedSecurity = true;
-
-/*// configure logging-information
-           optionsBuilder.UseLoggerFactory(new LoggerFactory(
-               new[] { new DebugLoggerProvider(
-                   (category, level) => category == DbLoggerCategory.Database.Command.Name
-                                        && level == LogLevel.Information
-               )}
-           ));
-
-           // configure lazy-loading: requires ALL navigation-properties to be 'virtual'!!
-           //optionsBuilder.UseLazyLoadingProxies();
-           */

@@ -3,20 +3,20 @@ using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using SC.BL.Domain;
 
-namespace SC.DAL.EF.Production
+namespace SC.DAL.EF
 {
-    public class ProductionRepository : ITicketRepository
+    public class TicketRepository : ITicketRepository
     {
-        private ProductionContext Pctx = null;
+        private SupportCenterDbContext ctx = null;
 
-        public ProductionRepository()
+        public TicketRepository()
         {
-            Pctx = new ProductionContext();
+            ctx = new SupportCenterDbContext();
         }
         
         public IEnumerable<Ticket> ReadTickets()
         {
-            IEnumerable<Ticket> tickets = Pctx.Tickets
+            IEnumerable<Ticket> tickets = ctx.Tickets
                                              .Include(t => t.Responses) // eager-loading 'Responses'
                                              .AsEnumerable();
             return tickets;
@@ -24,8 +24,8 @@ namespace SC.DAL.EF.Production
 
         public Ticket CreateTicket(Ticket ticket)
         {
-            Pctx.Tickets.Add(ticket);
-            Pctx.SaveChanges();
+            ctx.Tickets.Add(ticket);
+            ctx.SaveChanges();
                         
           
             return ticket;
@@ -34,26 +34,26 @@ namespace SC.DAL.EF.Production
         public Ticket ReadTicket(int ticketNumber)
         {
             //Ticket ticket = ctx.Tickets.Single(t => t.TicketNumber == ticketNumber);
-            Ticket ticket = Pctx.Tickets.Find(ticketNumber);
+            Ticket ticket = ctx.Tickets.Find(ticketNumber);
             return ticket;
         }
 
         public void UpdateTicket(Ticket ticket)
         {
-            Pctx.Tickets.Update(ticket);
-            Pctx.SaveChanges();
+            ctx.Tickets.Update(ticket);
+            ctx.SaveChanges();
         }
 
         public void DeleteTicket(int ticketNumber)
         {
             Ticket ticketToDelete = this.ReadTicket(ticketNumber);
-            Pctx.Tickets.Remove(ticketToDelete);
-            Pctx.SaveChanges();
+            ctx.Tickets.Remove(ticketToDelete);
+            ctx.SaveChanges();
         }
 
         public IEnumerable<TicketResponse> ReadTicketResponsesOfTicket(int ticketNumber)
         {
-            IEnumerable<TicketResponse> responses = Pctx.TicketResponses
+            IEnumerable<TicketResponse> responses = ctx.TicketResponses
                                                        .Where(response => response.Ticket.TicketNumber == ticketNumber)
                                                        .AsEnumerable();
 
@@ -67,8 +67,8 @@ namespace SC.DAL.EF.Production
 
         public TicketResponse CreateTicketResponse(TicketResponse response)
         {
-            Pctx.TicketResponses.Add(response);
-            Pctx.SaveChanges();
+            ctx.TicketResponses.Add(response);
+            ctx.SaveChanges();
 
             return response;
         }

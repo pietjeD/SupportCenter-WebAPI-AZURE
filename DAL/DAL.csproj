@@ -27,8 +27,7 @@
       <Compile Remove="EF\Production\ProductionContext.cs" />
       <Compile Remove="EF\Production\ProductionRepository.cs" />
       <Compile Remove="EF\Production\**" />
-      <Compile Remove="EF\SupportCenterDbContext.cs" />
-      <Compile Remove="EF\TicketRepository.cs" />
+      <Compile Remove="EF\test\SupportCenterDbInitializer.cs" />
     </ItemGroup>
 
     <ItemGroup>
